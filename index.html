@@ -1,1 +1,582 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scal=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    .main_container{
+        background-color: rgb(21, 60, 146);
+        height: 80px;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+    nav{
+        background-color: rgb(21, 60, 146);
+        height: 80px;
+        width: 95%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        color: white;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+    .nav_list ul{
+        display: flex;
+        gap: 30px;
+        list-style-type: none;
+        font-size: 17px;
+    }
+    ul li{
+        padding:5px;
+        /* border: 2px solid gray; */
+        border-radius: 10px;
+        cursor: pointer;
+    }
+    ul .special{
+        background-color: white;
+        color: black;
+        border: none;
+        padding: 8px;
+    }
+    .nav_list{
+        display: flex;
+        align-items: center;
+    }
+    .logo{
+        display: flex;
+        align-items: center;
+        border: 2px solid white;
+        border-radius: 20px;
+        padding: 17px;
+        background-color: #9b72ee;
+    }
 
+    
+    .main_content{
+        background-image: url(/bg2.jpg);
+        background-size: cover;
+        height: 615px;
+        width: 100%;
+        display: flex;
+        background-attachment: fixed;
+
+    }
+    .left{
+        height: 615px;
+        width: 60%;
+        /* background-color: rgba(0, 0, 0, 0.768); */
+        /* border: 2px solid white; */
+    }
+    .right{
+        height: 615px;
+        width: 40%;
+        /* background-color: rgba(0, 0, 0, 0.768); */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .line1 div{
+        display: flex;
+        gap: 5px;
+        font-size: 40px;
+    }
+    div > .h4{
+        color: greenyellow;
+    }
+    .line1{
+        color: white;
+        font-family: "Exo 2", sans-serif;
+        padding-top: 230px;
+        padding-left: 170px;
+    }
+    .line1 h1{
+        font-size: 70px;
+        transition: 1s;
+        cursor: pointer;
+        font-size: 80px;
+    }
+    .line1 h1:hover{
+        transform: scale(1.2);
+        color: #c9f320;
+    }
+    .circle{
+        background-color: red;
+        height: 400px;
+        width: 400px;
+        border-radius: 50%;
+        background-image: url(/pic.jpg);
+        background-size: cover;
+        box-shadow: 10px 10px 50px rgb(83, 186, 233);
+        cursor: pointer;
+        transition: 2s;
+        border: 2px solid gray;
+    }
+    .circle:hover{
+        transform: scale(1.3);
+        box-shadow: 10px 10px 400px rgb(211, 19, 214);
+        border: 2px solid gray;
+    }
+    .line1_right{
+        color: white;
+        font-family: "Exo 2", sans-serif;
+    }
+    .line1_right b{
+        color: rgb(251, 238, 0);
+    }
+    .line1 .h4{
+        color: #20f34e;
+        font-family: monospace;
+        overflow: hidden; /* Ensures the content is not revealed until the animation */
+        border-right: 10px solid orange; /* The typwriter cursor */
+        white-space: nowrap; /* Keeps the content on a single line */
+        margin: 0 ; /* Gives that scrolling effect as the typing happens */
+        letter-spacing: 5px; 
+        padding-left: 15px;
+        cursor: pointer;
+        transition: 1s;
+        animation: 
+            typing 7.3s steps(30, end),
+            blink-caret .5s step-end infinite;
+    }
+    .line1 .h4:hover{
+        transform: scale(1.10);
+        color: #c9f320;
+    }
+    @keyframes typing {
+        from { width: 0 }
+        to { width: 60% }
+        
+    }
+    @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: orange }
+    }
+    .icon ul{
+        padding-left: 300px;
+        color: white;
+        list-style-type: none;
+        display: flex;
+        gap: 50px;
+        padding-top: 20px;
+
+    }
+    .icon i{
+        font-size: 25px;
+        box-shadow: 0px 0px 100px rgb(0, 217, 255);
+    }
+    /* third are */
+    .under_line{
+        height: 10px;
+        background-color: gray;
+    }
+    .main{
+        background-color: rgb(8, 17, 53);
+        height: 700px;
+        background-image: url(/bg1.jpg);
+        background-size: cover;
+        background-attachment: fixed;
+    }
+    .overlay{
+        margin: 0;
+        height: 700px;
+        background-color: rgba(6, 2, 23, 0.782);
+        display: flex;
+        justify-content: center;
+    }
+    .boxes{
+        height: 100px;
+        width: 1400px;
+        background: rgb(90,49,149);
+        background: linear-gradient(90deg, rgba(90,49,149,1) 0%, rgba(65,32,108,1) 56%, rgba(3,3,46,1) 100%, rgba(9,2,61,1) 100%);
+        margin: 15px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        padding: 13px;
+        /* font-size: 30px; */
+        color: white;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        justify-content: center;
+        cursor: pointer;
+    }
+    .servic{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        font-family: monospace;
+        font-size: 20px;
+        text-align: center;
+    }
+    .main_2{
+        height: 700px;
+        background-image: url(/bg3.jpg);
+        background-attachment: fixed;
+        background-size: cover;
+
+    }
+    .overlay_2{
+        margin: 0;
+        height: 700px;
+        background-color: rgba(7, 2, 23, 0.842);
+        display: flex;
+        justify-content: center;
+    }
+    .servic h1{
+        color: #bfff00;
+        font-family: monospace;
+        overflow: hidden; /* Ensures the content is not revealed until the animation */
+        border-right: 10px solid orange; /* The typwriter cursor */
+        white-space: nowrap; /* Keeps the content on a single line */
+        margin: 0 ; /* Gives that scrolling effect as the typing happens */
+        letter-spacing: 5px; 
+        padding-left: 15px;
+        cursor: pointer;
+        transition: 1s;
+        animation: 
+            typeing 7.3s steps(30, end),
+            blinkk-caret .5s step-end infinite;
+    }
+    @keyframes typeing {
+        from { width: 0 }
+        to { width: 35% }
+        
+    }
+    @keyframes blinkk-caret {
+    from, to { border-color: transparent }
+    50% { border-color: orange }
+    }
+    .button{
+        padding-left: 370px;
+        padding-top: 20px;
+    }
+    button{
+        padding: 15px 30px;
+        background-color: #489c5a;
+        border-radius: 20px;
+        border: none;
+        font-size: 20px;
+        font-family: monospace;
+        cursor: pointer;
+        color: white;
+    }
+    button a{
+        color: white;
+        text-decoration: none;
+    }
+    .main_contain_bg{
+        display: flex;
+        background-color: rgba(0, 0, 0, 0.768);
+        width: 100%;
+    }
+    .boxes i{
+        font-size: 20px;
+    }
+    @media screen and (max-width:600px){
+        
+        .main_container{
+            width: 1100px;
+            background-color: rgb(6, 22, 57);
+            height: 120px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        nav{
+            background-color: rgb(24, 82, 205);
+            height: 120px;
+            width: 1100px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            color: white;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+         }
+         .nav_list ul{
+            display: flex;
+            gap: 10px;
+            list-style-type: none;
+            font-size: 20px;
+            margin-right: 50px;
+        }
+        nav .logo{
+            margin-left: 50px;
+            font-size: 30px;
+            padding: 15px;
+            border: 2px solid white;
+            background-color: #6774db;
+            border-radius: 20px;
+        }
+        .main_content{
+            background-image: url(/bg2.jpg);
+            background-size: cover;
+            height: 2115px;
+            width: 1100px;
+            /* display: flex;
+            flex-direction: column; */
+            background-attachment: fixed;
+        }
+        .left{
+            height: 500px;
+            width: 100%;
+            /* background-color: rgba(0, 0, 0, 0.768); */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .right{
+            height: 500px;
+            width: 100%;
+            /* background-color: rgba(0, 0, 0, 0.768); */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .line1 div{
+        display: flex;
+        gap: 5px;
+        font-size: 40px;
+        }
+        div > .h4{
+            color: greenyellow;
+        }
+        .line1{
+            color: white;
+            font-family: "Exo 2", sans-serif;
+            padding-top: 100px;
+            padding-left: 60px;
+            text-align: center;
+            font-size: 30px;
+        }
+        .line1 h1{
+            font-size: 70px;
+            transition: 1s;
+            cursor: pointer;
+        }
+        .line1 h1:hover{
+            transform: scale(1.2);
+            color: #c9f320;
+        }
+        .main_contain_bg{
+            display: flex;
+            flex-direction: column;
+        }
+        .line1 .h4{
+        color: #20f34e;
+        font-family: monospace;
+        overflow: hidden; /* Ensures the content is not revealed until the animation */
+        border-right: 10px solid orange; /* The typwriter cursor */
+        white-space: nowrap; /* Keeps the content on a single line */
+        margin: 0 ; /* Gives that scrolling effect as the typing happens */
+        letter-spacing: 5px; 
+        padding-left: 15px;
+        cursor: pointer;
+        transition: 1s;
+        animation: 
+            typing 7.3s steps(30, end),
+            blink-caret .5s step-end infinite;
+        }
+        .line1 .h4:hover{
+            transform: scale(1.10);
+            color: #c9f320;
+        }
+        @keyframes typing {
+            from { width: 0 }
+            to { width: 57% }
+            
+        }
+        @keyframes blink-caret {
+        from, to { border-color: transparent }
+        50% { border-color: orange }
+        }
+        .line1 div{
+            margin-left: 230px;
+        }
+        .button{
+        padding-left: 30px;
+        padding-top: 20px;
+        }
+        .icon ul{
+            padding-left: 30px;
+        }
+        /* main */
+        .main{
+            background-color: rgb(8, 17, 53);
+            width: 1100px;
+            height: 2400px;
+            background-image: url(/bg1.jpg);
+            background-size: cover;
+            background-attachment: fixed;
+        }
+        .boxes{
+            height: 400px;
+            width: 1000px;
+            background: rgb(90,49,149);
+            background: linear-gradient(90deg, rgba(90,49,149,1) 0%, rgba(65,32,108,1) 56%, rgba(3,3,46,1) 100%, rgba(9,2,61,1) 100%);
+            margin: 15px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 13px;
+            font-size: 30px;
+            color: white;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            justify-content: center;
+            cursor: pointer;
+            border-radius: 40px;
+        }
+        .boxes .box_h1{
+            font-size: 50px;
+        }
+        .servic{
+            text-align: center;
+            
+        }
+        .overlay{
+            height: 2400px;
+        }
+        .servic .box_h1{
+            color: #bfff00;
+            font-family: monospace;
+            overflow: hidden; /* Ensures the content is not revealed until the animation */
+            border-right: 10px solid orange; /* The typwriter cursor */
+            white-space: nowrap; /* Keeps the content on a single line */
+            margin: 0 ; /* Gives that scrolling effect as the typing happens */
+            letter-spacing: 5px; 
+            padding-left: 15px;
+            font-size: 60px;
+            cursor: pointer;
+            transition: 1s;
+            animation: 
+                typeing 7.3s steps(30, end),
+                blinkk-caret .5s step-end infinite;
+        }
+        @keyframes typeing {
+            from { width: 0 }
+            to { width: 49% }
+            
+        }
+        @keyframes blinkk-caret {
+        from, to { border-color: transparent }
+        50% { border-color: orange }
+        }
+        .main_2{
+            height: 0px;
+        }
+        .overlay_2{
+            height: 0px;
+        }
+        .under_line{
+            height: 10px;
+            width: 1100px;
+            background-color: gray;
+        }
+        
+        
+        
+
+    }
+
+    
+
+</style>
+<body>
+    <div class="main_container">
+        <nav>
+            <div class="logo">
+                <h1>Code_With_Sujoy_Da</h1>
+            </div>
+            <div class="nav_list">
+                <ul>
+                    <li>About me</li>
+                    <li>Contact</li>
+                    <li>Feedback</li>
+                    <li>Works</li>
+                    <li>Skills</li>
+                    <li class="special">Hire me</li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <div class="main_content">
+        <div class="main_contain_bg">
+            <div class="right">
+                <div class="line1_right">
+                    <h1><b>P</b>ortfolio</h1>
+                </div>
+                <br>
+                <div class="circle">
+    
+                </div>
+            </div>
+            <div class="left">
+                <div class="line1">
+                    <h2>Hello' its me</h2>
+                    <h1>Sujoy Das</h1>
+                    <div>
+                        <h4>I am </h4>
+                        <h4 class="h4">Web Developer</h4>
+                    </div>
+                        <h5>As a Front-end Developer, I craft digital experiences with a passion for code. <br>Transforming ideas into interactive and visually appealing websites, <br>I thrive on innovation and creating seamless user interfaces.</h5>
+                    </div>
+                    <div class="icon">
+                        <ul>
+                            <li><i class="fa-brands fa-instagram icon"></i></li>
+                            <li><i class="fa-brands fa-facebook icon"></i></li>
+                            <li><i class="fa-brands fa-linkedin icon"></i></li>
+                        </ul>
+                    </div>
+                    <div class="button">
+                        <button><a href="https://drive.google.com/file/d/1yTTl63EizjfEJ5i-kTqSXkBpz1IFyZlc/view?usp=sharing">Download CV</a></button>
+                    </div>
+            </div>
+            
+        </div>    
+    </div>
+    <div class="under_line">
+
+    </div>
+    <div class="main">
+        <div class="overlay">
+            <div class="servic">
+                <h1 class="box_h1 size">My <br>Quality <br>Services</h1>
+                <br>
+                <h4>We put your ideas and thus your wishes in the form of a unique web project that inspires you and you customers.</h4>
+                <br><br><br>
+                <div class="boxes"><h3 class="box_h1">01: Front-end Design </h3><br>
+                    <i>"Crafting digital experiences that captivate and innovate. Elevating web design with a seamless blend of creativity and functionality, ensuring your online presence stands out in the digital landscape."</i>
+                </div>
+                <div class="boxes"><h3 class="box_h1">02: Graphic Design </h3><br>
+                    <i>"Crafting digital experiences that captivate and innovate. Elevating web design with a seamless blend of creativity and functionality, ensuring your online presence stands out in the digital landscape."</i>
+                </div>
+                <div class="boxes"><h3 class="box_h1">03: Branding </h3><br>
+                    <i>"Crafting digital experiences that captivate and innovate. Elevating web design with a seamless blend of creativity and functionality, ensuring your online presence stands out in the digital landscape."</i>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="under_line">
+
+    </div>
+    <div class="main_2">
+        <div class="overlay_2">
+            <iframe src="/Day 1/day 1.html" width="100%" frameborder="0"></iframe>
+        </div>
+    </div>
+
+</body>
+</html>

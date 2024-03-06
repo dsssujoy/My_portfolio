@@ -285,6 +285,14 @@
     .boxes i{
         font-size: 20px;
     }
+    .counter{
+        height: 0px;
+        width: 0px;
+    }
+    .boxes:hover{
+            background: rgb(239,228,255);
+            background: linear-gradient(90deg, rgba(239,228,255,1) 0%, rgba(105,223,223,1) 0%, rgba(239,14,239,1) 100%);
+        }
     @media screen and (max-width:600px){
         
         .main_container{
@@ -413,6 +421,11 @@
         .icon ul{
             padding-left: 30px;
         }
+        .counter{
+            height: 500px;
+            width: 100%;
+            background-color: red;
+        }
         /* main */
         .main{
             background-color: rgb(8, 17, 53);
@@ -438,9 +451,15 @@
             justify-content: center;
             cursor: pointer;
             border-radius: 40px;
+            transition: 1s;
         }
         .boxes .box_h1{
             font-size: 50px;
+        }
+        .boxes:hover{
+            transform: scale(1.1);
+            background: rgb(239,228,255);
+            background: linear-gradient(90deg, rgba(239,228,255,1) 0%, rgba(105,223,223,1) 0%, rgba(239,14,239,1) 100%);
         }
         .servic{
             text-align: center;
@@ -485,7 +504,7 @@
             width: 1100px;
             background-color: gray;
         }
-        
+       
         
         
 
@@ -527,6 +546,7 @@
                 <div class="line1">
                     <h2>Hello' its me</h2>
                     <h1>Sujoy Das</h1>
+                    <br>
                     <div>
                         <h4>I am </h4>
                         <h4 class="h4">Web Developer</h4>
@@ -543,6 +563,10 @@
                     <div class="button">
                         <button><a href="https://drive.google.com/file/d/1yTTl63EizjfEJ5i-kTqSXkBpz1IFyZlc/view?usp=sharing">Download CV</a></button>
                     </div>
+                    <br>
+            </div>
+            <div class="counter">
+                <div class="count"></div>
             </div>
             
         </div>    

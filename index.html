@@ -292,6 +292,34 @@
     .boxes:hover{
             background: rgb(239,228,255);
             background: linear-gradient(90deg, rgba(239,228,255,1) 0%, rgba(105,223,223,1) 0%, rgba(239,14,239,1) 100%);
+    }
+    .main2{
+            height: 300px;
+            width: 100%;
+            background-color: rgb(19, 5, 50);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: white;
+        }
+        .logo-2 h1{
+            padding: 10px 20px;
+            border: 2px solid white;
+            border-radius: 20px;
+            margin-bottom: 10px;
+        }
+        small{
+            font-size: 20px;
+        }
+        .icon-logo-social{
+            list-style-type: none;
+            display: flex;
+            gap: 60px;
+        }
+        .work{
+            height: 0px;
+            width: 0px;
         }
     @media screen and (max-width:600px){
         
@@ -421,11 +449,6 @@
         .icon ul{
             padding-left: 30px;
         }
-        .counter{
-            height: 500px;
-            width: 100%;
-            background-color: red;
-        }
         /* main */
         .main{
             background-color: rgb(8, 17, 53);
@@ -451,13 +474,13 @@
             justify-content: center;
             cursor: pointer;
             border-radius: 40px;
-            transition: 1s;
+            transition: 2s;
         }
         .boxes .box_h1{
             font-size: 50px;
         }
         .boxes:hover{
-            transform: scale(1.1);
+            transform: scale(0.90);
             background: rgb(239,228,255);
             background: linear-gradient(90deg, rgba(239,228,255,1) 0%, rgba(105,223,223,1) 0%, rgba(239,14,239,1) 100%);
         }
@@ -504,7 +527,110 @@
             width: 1100px;
             background-color: gray;
         }
-       
+        .icon_area{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .logo-icon{
+            margin-top: 100px;
+            height: 300px;
+            width: 1100px;
+            /* background-color: red; */
+            display: flex;
+            margin-right: 10px;
+            align-items: center;
+            justify-content: center;
+        }
+        .imgsame{
+            height: 200px;
+            width: 200px;
+            margin: 20px;
+            /* background-color: #20f34e;
+            border-radius: 50%; */
+            
+        }
+        .img1{
+            background-image: url(/ex.png);
+            background-size: 160px;
+            background-repeat: no-repeat;
+        }
+        
+        .img3{
+            background-image: url(/js.png);
+            background-size: 160px;
+            background-repeat: no-repeat;
+        }
+        .img4{
+            background-image: url(/css.png);
+            background-size: 160px;
+            background-repeat: no-repeat;
+        }
+        .img5{
+            background-image: url(/py.png);
+            background-size: 180px;
+            background-repeat: no-repeat;
+        }
+        .main2{
+            height: 300px;
+            width: 1100px;
+            background-color: rgb(19, 5, 50);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: white;
+        }
+        logo-2 h1{
+            padding: 10px 20px;
+            border: 2px solid white;
+            border-radius: 20px;
+            margin-bottom: 10px;
+        }
+        small{
+            font-size: 20px;
+        }
+        .icon-logo-social{
+            list-style-type: none;
+            display: flex;
+            gap: 60px;
+        }
+        .work{
+            width: 1100px;
+            height: 700px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .lets-work{
+            background:transparent;
+            border: 2px solid white;
+            backdrop-filter: blur(18px);
+            border-radius: 30px;
+            height: 680px;
+            width: 800px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: white;
+        }
+        .lets-work h1{
+            font-size: 80px;
+        }
+        .lets-work h5{
+            font-size: 30px;
+        }
+        .lets-work button{
+            margin-bottom: 20px;
+            font-size: 50px;
+            background-color: white;
+            
+        }
+        .lets-work a{
+            color: rgb(5, 5, 126);
+        }
         
         
 
@@ -564,12 +690,30 @@
                         <button><a href="https://drive.google.com/file/d/1yTTl63EizjfEJ5i-kTqSXkBpz1IFyZlc/view?usp=sharing">Download CV</a></button>
                     </div>
                     <br>
+            </div> 
+            <div class="icon_area">
+                <div class="logo-icon ">
+                    <div class="img1 imgsame"></div>
+                    <div class="img3 imgsame"></div>
+                    <div class="img4 imgsame"></div>
+                    <div class="img5 imgsame"></div>
+                </div>
             </div>
-            <div class="counter">
-                <div class="count"></div>
-            </div>
-            
-        </div>    
+            <br>
+            <div class="work">
+                <div class="lets-work">
+                    <button><a href="#">Hire Me</a></button>
+                    <h1 class="heading-work">
+                        Let's Work together
+                    </h1>
+                    <br>
+                    <h5 class="caption">
+                        Collaborate on cutting-edge web design! <br>Combine creativity and expertise to craft visually stunning, <br>user-friendly websites. <br>Let's transform ideas into digital masterpieces <br>that captivate and engage audiences seamlessly.
+                    </h5>
+                </div>
+            </div> 
+        </div>  
+         
     </div>
     <div class="under_line">
 
@@ -596,10 +740,20 @@
     <div class="under_line">
 
     </div>
-    <div class="main_2">
-        <div class="overlay_2">
-            <iframe src="/Day 1/day 1.html" width="100%" frameborder="0"></iframe>
+    <div class="main2">
+        <div class="logo-2">
+            <h1>Code_With_Sujoy_Da</h1>
         </div>
+        <div class="copyright">
+            <small>&copy; 2024- code-with-sujoy-daa</small>
+        </div>
+        <br>
+        <div class="icon-logo-social">
+            <li><i class="fa-brands fa-instagram icon"></i></li>
+            <li><i class="fa-brands fa-facebook icon"></i></li>
+            <li><i class="fa-brands fa-linkedin icon"></i></li>
+        </div>
+
     </div>
 
 </body>
